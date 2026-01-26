@@ -1,0 +1,35 @@
+package compiler
+
+import (
+	"my-compiler/interpreter/ast"
+	"my-compiler/code"
+	"my-compiler/interpreter/object"
+)
+
+type Compiler struct {
+	instuctions code.Instructions
+	constants []object.Object
+}
+
+func New() *Compiler {
+	return &Compiler{
+		instructions: code.Instructions{},
+		constants: []object.Object{},
+	}
+}
+
+func (c *Compiler) Compile(node ast.Node) error {
+	return nil
+}
+
+func (c *Compiler) Bytecode() *Bytecode {
+	return &Bytecode{
+		Instructions: c.instructions,
+		Constants: c.constants,
+	}
+}
+
+type Bytecode struct {
+	Instructions code.Instructions
+	Constants []object.Object
+}
