@@ -7,7 +7,7 @@ import (
 )
 
 type Compiler struct {
-	instuctions code.Instructions
+	instructions code.Instructions
 	constants []object.Object
 }
 
