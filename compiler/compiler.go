@@ -1,9 +1,9 @@
 package compiler
 
 import (
-	"my-compiler/interpreter/ast"
+	"my-compiler/ast"
 	"my-compiler/code"
-	"my-compiler/interpreter/object"
+	"my-compiler/object"
 )
 
 type Compiler struct {

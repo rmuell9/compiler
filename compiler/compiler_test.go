@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"testing"
 	"my-compiler/code"
-	"my-compiler/interpreter/ast"
-	"my-compiler/interpreter/lexer"
-	"my-compiler/interpreter/parser"
-	"my-compiler/interpreter/object"
+	"my-compiler/ast"
+	"my-compiler/lexer"
+	"my-compiler/parser"
+	"my-compiler/object"
 )
 
 type compilerTestCase struct {
